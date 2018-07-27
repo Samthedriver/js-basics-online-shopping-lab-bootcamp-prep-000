@@ -71,7 +71,7 @@ function removeFromCart(item) {
   // write your code here
   for (var i = 0; i < cart[i].length; i++) {
     if (item == cart[i].itemName) {
-      cart[i].splice(i,1)
+      cart[i].splice(i - 1,1)
       return cart
     }
   }
