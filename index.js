@@ -69,6 +69,11 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  for (var i = 0; i < cart[i].length; i++) {
+    if (item == cart[i].itemName) {
+      cart[i].Splice(i,1)
+    }
+  }
 }
 
 function placeOrder(cardNumber) {
